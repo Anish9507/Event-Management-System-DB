@@ -99,6 +99,3 @@ build/             # Production build output (generated)
 ## Security Notes
 - Passwords are hashed with bcrypt.
 - JWT is signed with `JWT_SECRET`. Keep this secret in production.
-
-## License
-MIT (add your preferred license if different)
