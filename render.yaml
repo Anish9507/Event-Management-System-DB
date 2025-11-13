@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: event-management-platform
+    env: node
+    plan: free
+    branch: main
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DB_CLIENT
+        value: sqlite3
+    disks:
+      - name: data
+        mountPath: /opt/render/project/src/data
+        sizeGB: 1
