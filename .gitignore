@@ -1,0 +1,17 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Client build
+client/build/
+
+# Env
+.env
+
+# SQLite data
+/data/
+server/../data/
+server/../data/events.sqlite
+server/../data/*.sqlite
